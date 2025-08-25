@@ -17,14 +17,12 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Roboto', sans-serif;
             background-color: white;
             color: #1e3a8a;
             line-height: 1.6;
         }
-
         /* Navigation Styles */
         .navbar {
             position: fixed;
@@ -37,12 +35,10 @@
             padding: 1rem 0;
             transition: all 0.3s ease;
         }
-
         .navbar.scrolled {
             background: rgba(255, 255, 255, 0.98);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
-
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -51,7 +47,6 @@
             align-items: center;
             padding: 0 2rem;
         }
-
         .logo {
             display: flex;
             align-items: center;
@@ -60,31 +55,26 @@
             color: #1e3a8a;
             text-decoration: none;
         }
-
         .navbar .logo-icon img {
             max-height: 40px;
             width: auto;
             display: block;
         }
-
         @media (max-width: 768px) {
             .navbar .logo-icon img {
                 max-height: 30px;
             }
         }
-
         @media (max-width: 480px) {
             .navbar .logo-icon img {
                 max-height: 25px;
             }
         }
-
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-
         .nav-menu li a {
             text-decoration: none;
             color: #1e3a8a;
@@ -92,11 +82,9 @@
             transition: color 0.3s ease;
             position: relative;
         }
-
         .nav-menu li a:hover {
             color: #f97316;
         }
-
         .nav-menu li a::after {
             content: '';
             position: absolute;
@@ -107,11 +95,9 @@
             background: #f97316;
             transition: width 0.3s ease;
         }
-
         .nav-menu li a:hover::after {
             width: 100%;
         }
-
         .mobile-menu-toggle {
             display: none;
             background: none;
@@ -120,7 +106,6 @@
             color: #1e3a8a;
             cursor: pointer;
         }
-
         /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
@@ -142,25 +127,15 @@
             transition: all 0.3s ease;
             animation: pulse 2s infinite;
         }
-
         .whatsapp-float:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
         }
-
         @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
-
-        /* Hero Section */
         .hero {
             position: relative;
             height: 100vh;
@@ -169,7 +144,6 @@
             justify-content: center;
             overflow: hidden;
         }
-
         .hero-video {
             position: absolute;
             top: 0;
@@ -179,7 +153,6 @@
             object-fit: cover;
             z-index: -2;
         }
-
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -189,7 +162,6 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
-
         .hero-content {
             text-align: center;
             color: white;
@@ -197,20 +169,17 @@
             padding: 0 2rem;
             z-index: 1;
         }
-
         .hero-content h1 {
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
-
         .hero-content p {
             font-size: 1.3rem;
             margin-bottom: 2.5rem;
             opacity: 0.9;
         }
-
         .cta-button {
             display: inline-block;
             background: #f97316;
@@ -223,25 +192,21 @@
             transition: all 0.3s ease;
             border: 2px solid #f97316;
         }
-
         .cta-button:hover {
             background: transparent;
             color: #f97316;
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
         }
-
         /* Sections */
         .section {
             padding: 5rem 0;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -249,63 +214,53 @@
             margin-bottom: 3rem;
             color: #1e3a8a;
         }
-
-        /* Enhanced About Section Responsiveness */
+        
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
-
         .about-text {
             font-size: 1.1rem;
             line-height: 1.8;
         }
-
         .about-text h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: #1e3a8a;
         }
-
         .about-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             margin-top: 2rem;
         }
-
         .stat-item {
             text-align: center;
             padding: 1.5rem;
             background: #f8fafc;
             border-radius: 10px;
         }
-
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
             color: #f97316;
             display: block;
         }
-
         .stat-label {
             color: #1e3a8a;
             font-weight: 500;
         }
-
         /* Services Section */
         .services {
             background: #f8fafc;
         }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-
         .service-card {
             background: white;
             padding: 2.5rem;
@@ -314,11 +269,9 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-
         .service-card:hover {
             transform: translateY(-5px);
         }
-
         .service-icon {
             width: 60px;
             height: 60px;
@@ -331,59 +284,54 @@
             font-size: 1.5rem;
             color: white;
         }
-
         .service-card h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: #1e3a8a;
         }
-
-        /* Contact Section - Enhanced Responsive Design */
+        
+        /* Enhanced Contact Section - Improved Responsive Design */
         .contact {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 0;
         }
-
+        
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: start;
         }
-
-        .contact-form-container {
+        
+        /* Map and Button Container - Enhanced */
+        .map-button-container {
             background: white;
-            padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(30, 58, 138, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
-
-        .contact-form-container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .contact-form-container h3 {
-            font-size: 1.5rem;
-            color: #1e3a8a;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .contact-form-container iframe {
+        
+        .map-button-container iframe {
             border-radius: 15px;
             width: 100%;
-            min-height: 650px;
+            height: 350px;
             border: none;
             background: #f8fafc;
+            margin-bottom: 1rem;
+            min-height: 250px;
         }
-
+        
+        /* Contact Info Section - Enhanced */
         .contact-info {
             padding: 1rem 0;
+            width: 100%;
         }
-
+        
         .contact-info h3 {
             font-size: 1.8rem;
             margin-bottom: 2rem;
@@ -391,7 +339,7 @@
             font-weight: 600;
             text-align: center;
         }
-
+        
         .contact-item {
             display: flex;
             align-items: flex-start;
@@ -402,14 +350,15 @@
             transition: all 0.3s ease;
             border: 1px solid rgba(30, 58, 138, 0.1);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            width: 100%;
         }
-
+        
         .contact-item:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
             border-color: #f97316;
         }
-
+        
         .contact-icon {
             width: 50px;
             height: 50px;
@@ -424,12 +373,13 @@
             font-size: 1.2rem;
             box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
         }
-
+        
         .contact-item-content {
             flex: 1;
             line-height: 1.6;
+            min-width: 0; /* Prevents flex item overflow */
         }
-
+        
         .contact-item strong {
             color: #1e3a8a;
             font-weight: 600;
@@ -437,23 +387,26 @@
             display: block;
             margin-bottom: 0.5rem;
         }
-
+        
         .contact-item-text {
             color: #64748b;
             font-size: 1rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-
+        
         .contact-item-text a {
             color: #64748b;
             text-decoration: none;
             transition: color 0.3s ease;
+            word-break: break-all; /* Ensures long email/phone numbers break properly */
         }
-
+        
         .contact-item-text a:hover {
             color: #f97316;
         }
-
-        /* Additional Contact Features */
+        
+        /* Contact CTA Section - Enhanced */
         .contact-cta {
             text-align: center;
             margin-top: 3rem;
@@ -461,26 +414,27 @@
             background: white;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
         }
-
+        
         .contact-cta h4 {
             font-size: 1.3rem;
             color: #1e3a8a;
             margin-bottom: 1rem;
         }
-
+        
         .contact-cta p {
             color: #64748b;
             margin-bottom: 1.5rem;
         }
-
+        
         .contact-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-
+        
         .contact-btn {
             display: inline-flex;
             align-items: center;
@@ -491,34 +445,97 @@
             font-weight: 600;
             font-size: 0.95rem;
             transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
         }
-
+        
         .contact-btn-primary {
             background: #f97316;
             color: white;
             border: 2px solid #f97316;
         }
-
+        
         .contact-btn-primary:hover {
             background: transparent;
             color: #f97316;
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
         }
-
+        
         .contact-btn-secondary {
             background: transparent;
             color: #1e3a8a;
             border: 2px solid #1e3a8a;
         }
-
+        
         .contact-btn-secondary:hover {
             background: #1e3a8a;
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
         }
-
+        
+        /* Enhanced Modal Styles */
+        #contact-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            z-index: 1100;
+            min-width: 300px;
+            max-width: 90vw;
+            text-align: center;
+        }
+        
+        #contact-modal .contact-btn {
+            margin: 0.5rem;
+            width: auto;
+            min-width: 120px;
+        }
+        
+        #close-contact-modal {
+            background: #f44336;
+            color: white;
+            border: 2px solid #f44336;
+        }
+        
+        #close-contact-modal:hover {
+            background: transparent;
+            color: #f44336;
+        }
+        
+        /* Modal Overlay */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1050;
+        }
+        
+        /* Address specific styling for better mobile display */
+        .address-text {
+            white-space: nowrap;
+            font-size: 16px;
+        }
+        
+        .address-text i {
+            margin-right: 0 !important;
+            padding-right: 0 !important;
+        }
+        
+        .address-text span {
+            margin-left: -2px;
+        }
+        
         /* Enhanced Responsive Footer */
         .footer {
             background: #1e3a8a;
@@ -526,7 +543,6 @@
             padding: 3rem 0 1rem;
             position: relative;
         }
-
         .footer::before {
             content: '';
             position: absolute;
@@ -536,20 +552,17 @@
             height: 3px;
             background: #f97316;
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-bottom: 2rem;
         }
-
         .footer-section h3 {
             margin-bottom: 1rem;
             color: #f97316;
             font-size: 1.2rem;
         }
-
         .footer-section p,
         .footer-section a {
             color: #cbd5e1;
@@ -561,17 +574,14 @@
             gap: 0.5rem;
             margin-bottom: 0.5rem;
         }
-
         .footer-section a:hover {
             color: #f97316;
         }
-
         .social-links {
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
         }
-
         .social-link {
             width: 40px;
             height: 40px;
@@ -584,19 +594,16 @@
             text-decoration: none;
             transition: all 0.3s ease;
         }
-
         .social-link:hover {
             background: #f97316;
             transform: translateY(-2px);
         }
-
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 1rem;
             text-align: center;
             color: #94a3b8;
         }
-
         .tech-stack {
             display: flex;
             justify-content: center;
@@ -604,59 +611,46 @@
             margin-top: 1rem;
             flex-wrap: wrap;
         }
-
         .tech-icon {
             font-size: 1.5rem;
             opacity: 0.6;
             transition: opacity 0.3s ease;
             color: #f97316;
         }
-
         .tech-icon:hover {
             opacity: 1;
         }
 
-        /* Enhanced About Section Mobile Responsiveness */
+        /* Enhanced Responsive Breakpoints */
+
         @media (max-width: 1200px) {
-            .about-content {
+            .about-content { gap: 3rem; }
+            .about-stats { gap: 1.5rem; }
+            .container { max-width: 1000px; }
+        }
+
+        /* Large Tablets */
+        @media (max-width: 1024px) {
+            .about-text h3 { font-size: 1.4rem; }
+            .about-text { font-size: 1.05rem; }
+            .stat-item { padding: 1.25rem; }
+            .stat-number { font-size: 2.2rem; }
+            .footer-content { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+            
+            .contact-content {
                 gap: 3rem;
             }
             
-            .about-stats {
-                gap: 1.5rem;
+            .contact-info h3 {
+                font-size: 1.6rem;
             }
             
-            .container {
-                max-width: 1000px;
+            .map-button-container iframe {
+                height: 300px;
             }
         }
 
-        @media (max-width: 1024px) {
-            .about-text h3 {
-                font-size: 1.4rem;
-            }
-            
-            .about-text {
-                font-size: 1.05rem;
-            }
-            
-            .stat-item {
-                padding: 1.25rem;
-            }
-            
-            .stat-number {
-                font-size: 2.2rem;
-            }
-        }
-
-        /* Enhanced Footer Responsiveness */
-        @media (max-width: 1024px) {
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-            }
-        }
-
+        /* Tablets */
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -669,246 +663,336 @@
                 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
                 transition: left 0.3s ease;
             }
-
-            .nav-menu.active {
-                left: 0;
+            .nav-menu.active { left: 0; }
+            .mobile-menu-toggle { display: block; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { font-size: 1.1rem; }
+            .about-content { grid-template-columns: 1fr; gap: 2.5rem; }
+            .about-stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+            .about-text { order: 2; }
+            .about-stats { order: 1; }
+            .footer-content { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+            .social-links { justify-content: center; }
+            .section-title { font-size: 2rem; }
+            .whatsapp-float {
+                width: 50px; height: 50px; font-size: 24px; right: 20px; bottom: 20px;
             }
 
-            .mobile-menu-toggle {
-                display: block;
+            /* Contact Section - Tablet */
+            .contact {
+                padding: 4rem 0;
             }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content p {
-                font-size: 1.1rem;
-            }
-
-            /* About Section Mobile Improvements */
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
-            }
-
-            .about-stats {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-
-            .about-text {
-                order: 2;
-            }
-
-            .about-stats {
-                order: 1;
-            }
-
-            /* Footer Mobile Improvements */
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-
+            
             .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2.5rem;
             }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
-                right: 20px;
-                bottom: 20px;
-            }
-
-            /* Contact Section Mobile Improvements */
-            .contact-form-container {
-                padding: 1.5rem;
-                margin-bottom: 2rem;
-            }
-
-            .contact-form-container h3 {
-                font-size: 1.3rem;
-            }
-
-            .contact-form-container iframe {
-                min-height: 450px;
-            }
-
+            
             .contact-info h3 {
                 font-size: 1.5rem;
                 margin-bottom: 1.5rem;
             }
-
+            
+            .map-button-container {
+                padding: 1.5rem;
+                order: 2; /* Places map below contact info on mobile */
+            }
+            
+            .map-button-container iframe {
+                height: 250px;
+                min-height: 200px;
+            }
+            
+            .contact-info {
+                order: 1; /* Places contact info above map on mobile */
+            }
+            
             .contact-item {
-                padding: 1rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .contact-icon {
-                width: 40px;
-                height: 40px;
-                margin-right: 1rem;
-                font-size: 1rem;
-            }
-
-            .contact-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-btn {
-                width: 100%;
-                max-width: 250px;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav-container {
-                padding: 0 1rem;
-            }
-
-            .hero-content {
-                padding: 0 1rem;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1rem;
-            }
-
-            .section {
-                padding: 3rem 0;
-            }
-
-            /* About Section Small Mobile */
-            .about-stats {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .stat-item {
-                padding: 1rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .about-text h3 {
-                font-size: 1.3rem;
-            }
-
-            .about-text {
-                font-size: 1rem;
-            }
-
-            /* Footer Small Mobile */
-            .footer {
-                padding: 2rem 0 1rem;
-            }
-
-            .footer-section {
-                margin-bottom: 1.5rem;
-            }
-
-            .footer-section h3 {
-                font-size: 1.1rem;
-                margin-bottom: 0.75rem;
-            }
-
-            .social-links {
-                gap: 0.75rem;
-            }
-
-            .social-link {
-                width: 35px;
-                height: 35px;
-                font-size: 0.9rem;
-            }
-
-            /* Contact Section Small Mobile Improvements */
-            .contact-form-container {
-                padding: 1rem;
-                border-radius: 15px;
-            }
-
-            .contact-form-container iframe {
-                min-height: 400px;
-                border-radius: 10px;
-            }
-
-            .contact-item {
-                flex-direction: column;
-                text-align: center;
                 padding: 1.25rem;
-                align-items: center;
+                margin-bottom: 1.5rem;
             }
-
+            
             .contact-icon {
-                margin-right: 0;
-                margin-bottom: 1rem;
                 width: 45px;
                 height: 45px;
+                font-size: 1.1rem;
+                margin-right: 1.25rem;
             }
-
-            .contact-item-content {
-                text-align: center;
+            
+            .contact-item strong {
+                font-size: 1.05rem;
             }
-
-            .section-title {
-                font-size: 1.75rem;
+            
+            .contact-item-text {
+                font-size: 0.95rem;
             }
-
+            
             .contact-cta {
                 padding: 1.5rem;
                 margin-top: 2rem;
             }
-
+            
             .contact-cta h4 {
                 font-size: 1.2rem;
             }
+            
+            .contact-buttons {
+                gap: 0.75rem;
+            }
+            
+            .contact-btn {
+                padding: 0.7rem 1.25rem;
+                font-size: 0.9rem;
+            }
+            
+            /* Modal adjustments for tablets */
+            #contact-modal {
+                min-width: 280px;
+                max-width: 85vw;
+                padding: 1.5rem;
+            }
+
+            .address-text {
+                font-size: 14px;
+                white-space: normal; /* Allow wrapping on smaller screens */
+            }
+
+            .footer-section p i.fas.fa-map-marker-alt {
+                margin-right: 0.8rem;
+                min-width: 20px;
+            }
         }
 
-        @media (max-width: 360px) {
-            .contact-form-container iframe {
-                min-height: 350px;
-            }
+        /* Mobile Phones */
+        @media (max-width: 480px) {
+            .nav-container { padding: 0 1rem; }
+            .hero-content { padding: 0 1rem; }
+            .hero-content h1 { font-size: 2rem; }
+            .container { padding: 0 1rem; }
+            .section { padding: 3rem 0; }
+            .about-stats { grid-template-columns: 1fr; gap: 1rem; }
+            .stat-item { padding: 1rem; }
+            .stat-number { font-size: 2rem; }
+            .about-text h3 { font-size: 1.3rem; }
+            .about-text { font-size: 1rem; }
+            .footer { padding: 2rem 0 1rem; }
+            .footer-section { margin-bottom: 1.5rem; }
+            .footer-section h3 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+            .social-links { gap: 0.75rem; }
+            .social-link { width: 35px; height: 35px; font-size: 0.9rem; }
 
+            /* Contact Section - Mobile */
+            .contact {
+                padding: 3rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            
+            .contact-content {
+                gap: 2rem;
+            }
+            
+            .contact-info h3 {
+                font-size: 1.3rem;
+                margin-bottom: 1.25rem;
+            }
+            
+            .map-button-container {
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .map-button-container iframe {
+                height: 200px;
+                min-height: 180px;
+            }
+            
             .contact-item {
                 padding: 1rem;
+                margin-bottom: 1.25rem;
+                flex-direction: column;
+                text-align: center;
             }
-
+            
+            .contact-item.address-item {
+                flex-direction: row;
+                text-align: left;
+            }
+            
             .contact-icon {
                 width: 40px;
                 height: 40px;
-            }
-
-            .stat-number {
-                font-size: 1.8rem;
-            }
-
-            .footer-section h3 {
                 font-size: 1rem;
+                margin-right: 0;
+                margin-bottom: 1rem;
+                align-self: center;
+            }
+            
+            .contact-item.address-item .contact-icon {
+                margin-right: 1rem;
+                margin-bottom: 0;
+                align-self: flex-start;
+            }
+            
+            .contact-item strong {
+                font-size: 1rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .contact-item-text {
+                font-size: 0.9rem;
+            }
+            
+            .contact-item-text a {
+                word-break: break-all;
+            }
+            
+            .contact-cta {
+                padding: 1.25rem;
+                margin-top: 1.5rem;
+            }
+            
+            .contact-cta h4 {
+                font-size: 1.1rem;
+            }
+            
+            .contact-cta p {
+                font-size: 0.9rem;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+                min-width: 200px;
+                justify-content: center;
+            }
+            
+            /* Enhanced mobile modal */
+            #contact-modal {
+                min-width: 260px;
+                max-width: 90vw;
+                padding: 1.25rem;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+            
+            #contact-modal .contact-btn {
+                width: 100%;
+                margin: 0.5rem 0;
+                min-width: auto;
+            }
+
+            .address-text {
+                font-size: 13px;
             }
         }
-    </style>
+
+        /* Extra Small Mobile Phones */
+        @media (max-width: 320px) {
+            .contact {
+                padding: 2.5rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .contact-info h3 {
+                font-size: 1.2rem;
+            }
+            
+            .map-button-container {
+                padding: 0.75rem;
+            }
+            
+            .map-button-container iframe {
+                height: 180px;
+            }
+            
+            .contact-item {
+                padding: 0.75rem;
+            }
+            
+            .contact-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .contact-cta {
+                padding: 1rem;
+            }
+            
+            .contact-btn {
+                padding: 0.7rem 1.25rem;
+                font-size: 0.85rem;
+            }
+            
+            #contact-modal {
+                padding: 1rem;
+            }
+        }
+
+        /* Landscape Mobile Orientation */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .map-button-container iframe {
+                height: 200px;
+            }
+            
+            .contact-item {
+                flex-direction: row;
+                text-align: left;
+            }
+            
+            .contact-icon {
+                margin-right: 1rem;
+                margin-bottom: 0;
+            }
+        }
+
+        /* High DPI Displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .contact-icon {
+                background: linear-gradient(135deg, #f97316, #ea580c);
+            }
+        }
+
+        .address {
+            white-space: nowrap;   /* keep in one line */
+            font-size: 16px;
+        }
+
+        .address i {
+            margin-right: 0 !important;   /* kill FA default margin */
+            padding-right: 0 !important;
+        }
+
+        .address span {
+            margin-left: -2px;  /* pulls text tight to icon */
+        }
+
+        @media (max-width: 768px) {
+            .address {
+                font-size: 14px;           /* smaller for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .address {
+                font-size: 13px;           /* even smaller for mobiles */
+            }
+        }
+</style>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -929,12 +1013,10 @@
             <button class="mobile-menu-toggle" id="mobile-toggle">☰</button>
         </div>
     </nav>
-
     <!-- WhatsApp Float Button -->
     <a href="https://wa.me/+917906406519" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline>
@@ -948,18 +1030,17 @@
             <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
     </section>
-
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Leadspair Solutions</h2>
             <div class="about-content">
-                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
                     <h3>Accelerating Growth with Smarter Lead Generation & BPO Services</h3>
                     <p>Leadspair connects businesses with high-quality leads and provides end-to-end outsourcing solutions. From back office and call centers to sales, healthcare, and e-commerce, we simplify complexity and drive growth.</p>
                     <p>With advanced technology and a dedicated team, we don't just generate leads—we create opportunities that fuel long-term success. Partner with Leadspair to scale smarter, sell faster, and grow stronger.</p>
                 </div>
-                <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
+                <div class="about-stats" data-aos="fade-up" data-aos-delay="400">
                     <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
                         <span class="stat-number counter" data-target="1200">0</span>
                         <span class="stat-label">Happy Customers</span>
@@ -980,7 +1061,6 @@
             </div>
         </div>
     </section>
-
     <!-- Services Section -->
     <section class="section services" id="services">
         <div class="container">
@@ -991,43 +1071,21 @@
                     <h3>ACA Live Transfers</h3>
                     <p>We simplify the complex world of Affordable Care Act (ACA) and Obamacare leads, ensuring your sales process is effective and efficient.</p>
                 </div>
-
                 <div class="service-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="service-icon"><i class="fas fa-cross"></i></div>
                     <h3>Final Expense Leads</h3>
                     <p>Providing quality leads for final expense insurance—covering funeral costs, medical bills, and small debts, making it a critical product.</p>
                 </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon"><i class="fas fa-syringe"></i></div>
-                    <h3>Diabetic Leads</h3>
-                    <p>Timely and targeted diabetic leads that connect your services directly with individuals in need of effective healthcare solutions.</p>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="service-icon"><i class="fas fa-solar-panel"></i></div>
-                    <h3>Solar Leads</h3>
-                    <p>Connecting solar companies, consultants, and product suppliers with homeowners and businesses ready to adopt renewable energy solutions.</p>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Pain Management Solutions</h3>
-                    <p>Specialized DME leads for healthcare providers to reach individuals seeking relief for chronic pain and recovery solutions.</p>
-                </div>
-
                 <div class="service-card" data-aos="fade-up" data-aos-delay="350">
                     <div class="service-icon"><i class="fas fa-wheelchair"></i></div>
                     <h3>Social Security Disability Insurance</h3>
                     <p>Leads for SSDI services, connecting you with individuals who need crucial support due to disability and inability to work.</p>
                 </div>
-
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-icon"><i class="fas fa-coins"></i></div>
                     <h3>Debt Settlement Leads</h3>
                     <p>Empowering debt relief firms, advisors, and credit counselors by connecting them with individuals seeking settlement solutions.</p>
                 </div>
-
                 <div class="service-card" data-aos="fade-up" data-aos-delay="450">
                     <div class="service-icon"><i class="fas fa-notes-medical"></i></div>
                     <h3>Medicare Advantage Leads</h3>
@@ -1036,21 +1094,19 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
             <div class="contact-content">
-                <!-- Google Form Integration -->
-                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Send us a Message</h3>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdB23YNKc0cCJr3KSSVA1dpj09dFuLlHwtOWFgZFoya8vkScQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="map-button-container" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Google Map Embed -->
+                    <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.518896104398!2d77.33450409999999!3d28.6441779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb9ddcb1429b%3A0xe900df59c30670e1!2sCloud%209%20Apartments%20Vaishali!5e0!3m2!1sen!2sin!4v1756088210621!5m2!1sen!2sin"                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button id="open-contact-tab" class="cta-button" style="margin-top: 1rem;">Get in Touch</button>
                 </div>
-                
                 <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
                     <h3>Contact Information</h3>
-                    
                     <div class="contact-item" data-aos="fade-up" data-aos-delay="500">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
@@ -1065,7 +1121,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="contact-item" data-aos="fade-up" data-aos-delay="600">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
@@ -1080,7 +1135,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="contact-item" data-aos="fade-up" data-aos-delay="700">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -1093,7 +1147,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="contact-item" data-aos="fade-up" data-aos-delay="800">
                         <div class="contact-icon">
                             <i class="fas fa-clock"></i>
@@ -1102,22 +1155,19 @@
                             <strong>Business Hours</strong>
                             <div class="contact-item-text">
                                 <i class="fas fa-calendar-alt"></i>
-                                Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM
+                                Monday - Friday: 5 PM - 5AM<br>Saturday & Sunday Off 
                             </div>
                         </div>
                     </div>
-                    
                     <div class="contact-cta" data-aos="fade-up" data-aos-delay="900">
                         <h4>Ready to Get Started?</h4>
                         <p>Let's discuss how we can help grow your business with our proven lead generation strategies.</p>
                         <div class="contact-buttons">
                             <a href="https://wa.me/+917906406519" class="contact-btn contact-btn-primary">
-                                <i class="fab fa-whatsapp"></i>
-                                WhatsApp Chat
+                                <i class="fab fa-whatsapp"></i> WhatsApp Chat
                             </a>
                             <a href="tel:+917906406519" class="contact-btn contact-btn-secondary">
-                                <i class="fas fa-phone"></i>
-                                Call Now
+                                <i class="fas fa-phone"></i> Call Now
                             </a>
                         </div>
                     </div>
@@ -1125,7 +1175,13 @@
             </div>
         </div>
     </section>
-
+    <!-- Modal Section -->
+    <div id="contact-modal">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVNeZcosHPknnZtsBHGJ5PVNfw4JPEkQkz313sJH2S6Ji3aQ/viewform?usp=header" target="_blank" class="contact-btn contact-btn-primary">Buy the Leads</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHaNK4Ij_Cszv7c3D1oPXY-K67eOno5ppTkDHZwNCxeDwnXw/viewform?usp=header" target="_blank" class="contact-btn contact-btn-secondary">Apply for Job</a>
+        <br>
+        <button id="close-contact-modal" class="contact-btn" style="margin-top:1rem;">Close</button>
+    </div>
     <!-- Enhanced Responsive Footer -->
     <footer class="footer">
         <div class="container">
@@ -1136,7 +1192,7 @@
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/deepak-kumar-a83773170/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -1149,28 +1205,27 @@
                 </div>
                 <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
                     <h3>Services</h3>
-                    <p><a href="#"><i class="fas fa-chart-line"></i> Lead Generation</a></p>
-                    <p><a href="#"><i class="fas fa-headset"></i> Call Center</a></p>
-                    <p><a href="#"><i class="fas fa-database"></i> Data Processing</a></p>
-                    <p><a href="#"><i class="fas fa-user-friends"></i> Customer Support</a></p>
+                    <p><a href="#services"><i class="fas fa-chart-line"></i> Lead Generation</a></p>
+                    <p><a href="#services"><i class="fas fa-headset"></i> Call Center</a></p>
+                    <p><a href="#services"><i class="fas fa-database"></i> Data Processing</a></p>
+                    <p><a href="#services"><i class="fas fa-user-friends"></i> Customer Support</a></p>
                 </div>
                 <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
                     <h3>Contact Info</h3>
                     <p>
                         <a href="mailto:deepakkumar@leadspairsolutions.com">
-                            <i class="fas fa-envelope"></i> 
+                            <i class="fas fa-envelope"></i>
                             deepakkumar@leadspairsolutions.com
                         </a>
                     </p>
                     <p>
                         <a href="tel:+917906406519">
-                            <i class="fas fa-phone"></i> 
+                            <i class="fas fa-phone"></i>
                             +91 7906406519
                         </a>
                     </p>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i> 
-                        1510/S3 Cloud 9, Vaishali Sector 1, Ghaziabad, Uttar Pradesh
+                    <p class="address">
+  <i class="fas fa-map-marker-alt"></i><span>1510/S3 Cloud 9, Vaishali Sector 1, Ghaziabad, Uttar Pradesh</span>
                     </p>
                 </div>
             </div>
@@ -1179,7 +1234,6 @@
             </div>
         </div>
     </footer>
-
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -1190,7 +1244,6 @@
             once: true,
             offset: 100
         });
-
         // Counter Animation starting from 0
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
@@ -1198,7 +1251,6 @@
                 const target = parseInt(counter.getAttribute('data-target'));
                 const increment = target / 100;
                 let count = 0;
-                
                 const updateCounter = () => {
                     if (count < target) {
                         count += increment;
@@ -1219,7 +1271,6 @@
                 updateCounter();
             });
         }
-
         // Intersection Observer for counter animation
         const aboutSection = document.getElementById('about');
         const counterObserver = new IntersectionObserver((entries) => {
@@ -1231,15 +1282,12 @@
             });
         });
         counterObserver.observe(aboutSection);
-
         // Mobile menu toggle
         const mobileToggle = document.getElementById('mobile-toggle');
         const navMenu = document.getElementById('nav-menu');
-
         mobileToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });
-
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
@@ -1249,7 +1297,6 @@
                 navbar.classList.remove('scrolled');
             }
         });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1265,7 +1312,6 @@
                 navMenu.classList.remove('active');
             });
         });
-
         // iOS Video Autoplay Fix
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.querySelector('.hero-video');
@@ -1275,6 +1321,24 @@
                 });
             }
         });
+
+        // Modal logic
+        const openBtn = document.getElementById('open-contact-tab');
+        const modal = document.getElementById('contact-modal');
+        const closeBtn = document.getElementById('close-contact-modal');
+        if (openBtn && modal && closeBtn) {
+            openBtn.addEventListener('click', function() {
+                modal.style.display = 'block';
+            });
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
