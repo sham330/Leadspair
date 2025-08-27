@@ -1,0 +1,11 @@
+# Robots.txt file for Leadspair Solutions
+User-agent: *
+Allow: /
+
+# Disallow sensitive paths (optional, add if you create them later)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+
+# Sitemap location
+Sitemap: https://www.leadspairsolutions.co.in/sitemap.xml
